@@ -25,3 +25,11 @@ window.onscroll = () => {
     menu.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
+
+const form = document.querySelector('form');
+const thankYouMessage = document.querySelector('#thank-you-message');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  thankYouMessage.classList.add('show');
+  setTimeout(() => form.submit(), 2000);
+});
