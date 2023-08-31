@@ -147,6 +147,12 @@ span{
     top: 6px;
     right: 6px;
 }
+#thank-you-message {
+  display: none;
+}
+#thank-you-message.show {
+  display: block;
+}
 header.sticky{
     padding: 12px 15%;
     background: var(--main-color);
